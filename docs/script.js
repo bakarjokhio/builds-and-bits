@@ -30,7 +30,7 @@ fetch('projects.json')
       // Color based on language or category
       const langColor = languageColors[project.language];
       const catColor = categoryColors[project.category];
-      bg = langColor || catColor || '#007bff';
+      const bg = langColor || catColor || '#007bff';
       card.style.background = bg;
 
       // Determine font color based on background
