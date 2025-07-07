@@ -30,11 +30,12 @@ fetch('projects.json')
       // Color based on language or category
       const langColor = languageColors[project.language];
       const catColor = categoryColors[project.category];
-      card.style.background = langColor || catColor || '#007bff';
+      bg = langColor || catColor || '#007bff';
+      card.style.background = bg;
 
       // Determine font color based on background
-const useLightText = bg.includes('#f7') || bg.includes('61dafb') || bg.includes('f0f2f5');
-card.style.color = useLightText ? '#222' : '#fff';
+      const useLightText = bg.includes('#f7') || bg.includes('61dafb') || bg.includes('f0f2f5');
+      card.style.color = useLightText ? '#222' : '#fff';
 
       card.innerHTML = `
         <h3>${project.title}</h3>
