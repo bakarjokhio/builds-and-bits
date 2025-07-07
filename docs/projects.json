@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Click Counter",
+    "description": "Learn basic DOM manipulation and event handling.",
+    "url": "click-counter/",
+    "timestamp": "2024-07-01",
+    "level": 1,
+    "featured": true,
+    "language": "JavaScript",
+    "category": "Educational"
+  },
+  {
+    "title": "BMI Calculator",
+    "description": "Calculate your Body Mass Index with a clean UI.",
+    "url": "bmi-calculator/",
+    "timestamp": "2024-07-03",
+    "level": 2,
+    "featured": false,
+    "language": "Android",
+    "category": "Health"
+  }
+]
