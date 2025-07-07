@@ -32,6 +32,10 @@ fetch('projects.json')
       const catColor = categoryColors[project.category];
       card.style.background = langColor || catColor || '#007bff';
 
+      // Determine font color based on background
+const useLightText = bg.includes('#f7') || bg.includes('61dafb') || bg.includes('f0f2f5');
+card.style.color = useLightText ? '#222' : '#fff';
+
       card.innerHTML = `
         <h3>${project.title}</h3>
         <p>${project.description}</p>
