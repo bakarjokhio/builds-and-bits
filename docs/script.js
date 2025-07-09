@@ -15,6 +15,19 @@ fetch('projects.json')
       Utility: "linear-gradient(135deg, #43cea2, #185a9d)"
     };
 
+const languageIcons = {
+  JavaScript: '<i class="fab fa-js-square"></i>',
+  Android: '<i class="fab fa-android"></i>',
+  "React Native": '<i class="fab fa-react"></i>'
+};
+
+const categoryIcons = {
+  Educational: '<i class="fas fa-book"></i>',
+  Health: '<i class="fas fa-heartbeat"></i>',
+  Utility: '<i class="fas fa-toolbox"></i>',
+  Game: '<i class="fas fa-gamepad"></i>'
+};
+
     // Sort: featured > latest > level
     data.sort((a, b) => {
       if (a.featured !== b.featured) return b.featured - a.featured;
@@ -38,14 +51,14 @@ fetch('projects.json')
       card.style.color = useLightText ? '#222' : '#fff';
 
       card.innerHTML = `
-        <h3>${project.title}</h3>
-        <p>${project.description}</p>
-        <p style="margin-top:0.5rem;font-size:0.8rem;">
-          <strong>Language:</strong> ${project.language} <br/>
-          <strong>Category:</strong> ${project.category} <br/>
-          <strong>Level:</strong> ${project.level}
-        </p>
-      `;
+  <div class="card-header">
+    <h3>${project.title}</h3>
+    <div class="card-icons">
+      ${languageIcons[project.language] || ''} ${categoryIcons[project.category] || ''}
+    </div>
+  </div>
+  <p>${project.description}</p>
+`;
 
       container.appendChild(card);
     });

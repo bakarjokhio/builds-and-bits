@@ -1,7 +1,7 @@
 [
   {
     "title": "Click Counter",
-    "description": "Learn basic DOM manipulation and event handling.",
+    "description": "This fun little app counts how many times you click the button. It's a great way to start exploring how websites can react to what you do.",
     "url": "click-counter/",
     "timestamp": "2024-07-01",
     "level": 1,

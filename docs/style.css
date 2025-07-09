@@ -13,6 +13,28 @@ header {
   font-size: 2rem;
   font-weight: bold;
 }
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;  /* center the content horizontally */
+  align-items: center;      /* center the content vertically */
+  position: relative;
+}
+
+.header-content .title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.header-content img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .container {
   max-width: 1100px;
@@ -33,6 +55,28 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card-header h3 {
+  flex: 1 1 auto;
+  margin: 0;
+  font-size: 1.3rem;
+  color: inherit;
+}
+
+.card-icons {
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  text-align: right;
+  min-width: fit-content;
 }
 
 .card:hover {
