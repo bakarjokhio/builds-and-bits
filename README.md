@@ -33,3 +33,4 @@ Each project is placed in its own folder with:
 - Live preview link (if applicable)
 
 Example:
+[Click counter](https://bakarjokhio.github.io/builds-and-bits/click-counter/)
