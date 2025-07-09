@@ -3,6 +3,8 @@
 A playful little web app that counts how many times you've clicked the button!  
 It's a perfect beginner-friendly project to practice JavaScript event handling and DOM manipulation.
 
+Here is the Live Link [Clics counter web app](https://bakarjokhio.github.io/builds-and-bits/click-counter/)
+
 ---
 
 ## 🔧 Features
